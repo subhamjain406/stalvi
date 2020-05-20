@@ -1,0 +1,538 @@
+body {
+  overflow-x: hidden;
+  font-family: "Hind", sans-serif;
+  scroll-behavior: smooth;
+}
+/* -------------------------- navbar main carousel css -------------------------------------- */
+.image-size {
+  width: 100vw;
+  height: 80vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 0px;
+  left: 15%;
+  top: 43%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 0px 6rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center; /* Center text */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+  text-transform: uppercase;
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1c2331 !important;
+  }
+}
+.view,
+body,
+html {
+  height: 100%;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.page-footer,
+.top-nav-collapse {
+  background-color: #1c2331;
+  transition: background-color 0.5s ease 0s;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1c2331;
+  }
+}
+
+.navbar-nav a {
+  font-size: 20px;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/*
+  Responsive CSS MacBook Retina Mockup by Henri Peetsmann
+  https://codepen.io/henripeetsmann/
+*/
+.mockups {
+  margin: 0;
+  padding: 0vw;
+}
+
+.owl-carousel a {
+  background-size: cover;
+  display: block;
+}
+.owl-carousel .owl-controls {
+  display: none;
+}
+
+#mockup-slider-titles h1 {
+  font-family: sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+.controls {
+  text-align: center;
+  padding: 2em;
+}
+.controls a {
+  color: #fff;
+  background-color: #ccc;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding: 0.5em 1em;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 500px;
+  transition: 0.2s ease-in-out all;
+}
+.controls a:hover {
+  background-color: #595050;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* CODE BY HENRI PEETSMANN */
+.css-mb {
+  max-width: 1200px;
+  /* Set the desired maximum width of the macbook */
+  min-width: 50px;
+  /* Set the desired minimum width of the macbook */
+  margin: 0 auto;
+  /* Align mockup to center */
+}
+
+.css-mb div {
+  box-sizing: border-box !important;
+  /* Just in case */
+}
+
+/* Center the display */
+.css-mb .mb-display-position {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* The display */
+.css-mb .mb-display {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 65.9442%;
+  background: #373435;
+  -webkit-border-top-left-radius: 3.5% 5.3075%;
+  -moz-border-radius-topleft: 3.5% 5.3075%;
+  border-top-left-radius: 3.5% 5.3075%;
+  -webkit-border-top-right-radius: 3.5% 5.3075%;
+  -moz-border-radius-toptight: 3.5% 5.3075%;
+  border-top-right-radius: 3.5% 5.3075%;
+}
+
+/* Webcam */
+/* Browser may not render a perfect circle */
+.css-mb .mb-display:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  width: 1%;
+  height: 1.5164%;
+  margin-left: -0.5%;
+  border-radius: 50%;
+  background: #525252;
+}
+
+/* Glare */
+/* Browser may not render the top and right offset evenly */
+.css-mb .mb-display:after {
+  content: "";
+  display: none;
+  position: absolute;
+  right: 0.4%;
+  top: 0.64%;
+  width: 62.5%;
+  height: 100%;
+  background: none;
+  /* Hide the gradient on older browsers */
+  background: -moz-linear-gradient(
+    55deg,
+    rgba(0, 0, 0, 0) 61%,
+    rgba(255, 255, 255, 0.05) 61%
+  );
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(
+    36deg,
+    rgba(0, 0, 0, 0) 61%,
+    rgba(255, 255, 255, 0.05) 61%
+  );
+  /* Chrome10+ and Safari5.1+ compute the degree differently */
+  background: -o-linear-gradient(
+    55deg,
+    rgba(0, 0, 0, 0) 61%,
+    rgba(255, 255, 255, 0.05) 61%
+  );
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    55deg,
+    rgba(0, 0, 0, 0) 61%,
+    rgba(255, 255, 255, 0.05) 61%
+  );
+  /* IE10+ */
+  background: linear-gradient(
+    55deg,
+    rgba(0, 0, 0, 0) 61%,
+    rgba(255, 255, 255, 0.05) 61%
+  );
+  -webkit-border-top-right-radius: 5.3075%;
+  -moz-border-radius-toptight: 5.3075%;
+  border-top-right-radius: 5.3075%;
+}
+
+/* Only show glare, if the class is applied */
+.css-mb.with-glare .mb-display:after {
+  display: block;
+}
+
+/* Position the screen and give make it the right size, ratio 16:10 */
+.css-mb .mb-screen-position {
+  position: absolute;
+  top: 6.5%;
+  width: 93.2%;
+  left: 3.4%;
+  height: 0;
+  margin: 0;
+  padding-bottom: 58.25%;
+  /* Ratio */
+}
+
+/* Give parent (this element) a "height", so that child elements can use height: 100%;*/
+.css-mb .mb-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+  /* bg color if content is not big enough, or rendering is off */
+}
+
+/* Image on the screen */
+.css-mb .mb-screen img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Iframe on the screen */
+.css-mb .mb-screen iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Macbook body */
+.css-mb .mb-body {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 2.3%;
+  background: #e6e7e8;
+}
+
+/* The groove */
+.css-mb .mb-body:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 14.074%;
+  height: 0;
+  padding-bottom: 1.4814%;
+  margin-left: -7.037%;
+  background: #a9abae;
+  -webkit-border-bottom-left-radius: 7.037% 50%;
+  -moz-border-radius-bottomleft: 7.037% 50%;
+  border-bottom-left-radius: 7.037% 50%;
+  -webkit-border-bottom-right-radius: 7.037% 50%;
+  -moz-border-radius-bottomtight: 7.037% 50%;
+  border-bottom-right-radius: 7.037% 50%;
+}
+
+/* Macbook bottom */
+.css-mb .mb-bottom-cover {
+  width: 100%;
+  height: 0;
+  padding-bottom: 0.7407%;
+  background: #a9abae;
+  -webkit-border-bottom-left-radius: 12% 600%;
+  -moz-border-radius-bottomleft: 12% 600%;
+  border-bottom-left-radius: 12% 600%;
+  -webkit-border-bottom-right-radius: 12% 600%;
+  -moz-border-radius-bottomtight: 12% 600%;
+  border-bottom-right-radius: 12% 600%;
+}
+.laptop-slider {
+  padding: 0 8rem;
+  /* background-image: url(images/lap_back.jpg); */
+}
+
+.advertisement-heading {
+  font-weight: bold;
+  font-size: 2rem;
+  background: black;
+  color: white;
+  margin-right: 1rem;
+  padding: 1px 2px;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+.why {
+  padding: 3rem 12rem;
+}
+
+.left-section .left-heading {
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: white;
+  background: black;
+  padding: 0 4px;
+}
+
+.left-section .left-context {
+  color: #595050;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-style: italic;
+}
+
+.right-section .right-context {
+  position: relative;
+  color: #595050;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding-top: 5rem;
+}
+
+.right-section .right-context:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 30%;
+  height: 1px;
+  border: 1px solid #1c1b1b;
+}
+
+.channel-list img:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+/* ----------------parallax effect --------------------------- */
+/* @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,800&display=swap"); */
+
+.b-simple-text {
+  background: url(images/slogan.jpg);
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  padding: 90px 0;
+  color: #5e5859;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.b-simple-text:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(81, 102, 124, 0.25);
+}
+.b-simple-text__header {
+  font-size: 60px;
+  line-height: 1.2;
+  color: white;
+  font-weight: 800;
+  max-width: 700px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+.b-simple-text__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1240px;
+}
+/* --------------------------------------------------------*/
+
+/* -----------------------image hover effect ----------------------- */
+.category {
+  padding: 1rem 4rem;
+}
+.crd {
+  margin: 1rem;
+
+  position: relative;
+  width: 22rem;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.crd-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.crd-info {
+  color: hsl(0, 0%, 90%);
+  position: absolute;
+  bottom: 20px;
+  left: 33px;
+}
+
+.crd-heading {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-weight: 900;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* EFFECTS */
+/* ====================================================== */
+
+/* effect-1 */
+.crd--effect-1 .crd-img {
+  transform: scale(0.9);
+  transition: 0.4s;
+}
+
+.crd--effect-1:hover .crd-img {
+  transform: scale(1);
+}
+
+.business {
+  font-size: 2.5rem;
+  background: black;
+  color: white;
+  margin: 0 29rem;
+}
+/* -------------------------------------------------------------------- */
+
+/* -------------------------example -------------- */
+.example-image {
+  height: auto;
+  width: 80%;
+  box-shadow: 10px 10px 3px #000;
+}
+
+.example-info {
+  text-align: center;
+  font-size: 4rem;
+  margin: 20px 9rem;
+  color: white;
+  background: black;
+}
+.example-info1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 20px;
+}
+.example-info2 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 20px 14rem;
+  color: white;
+  background: black;
+}
+
+/* -------------------------------------------------- */
+
+#section-7 {
+  padding: 3% 20%;
+  background-color: #1b1919;
+}
+
+.section-title7 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background: black;
+  margin: 0 20rem;
+}
+
+.section-para7 {
+  color: #595050;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+
+.contact {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  /* border: 1px solid #26adf1; */
+  border-radius: 0;
+}
+
+.form-control:hover {
+  /* border: 1px solid#26adf1; */
+}
+
+.form-control:focus {
+  /* border: 1px solid #26adf1 !important; */
+  /* box-shadow: 0px 0px #26adf1 inset, 0px 0px #1b1919; */
+  /* outline-color: #26adf1 !important; */
+}
+
+/* -------------------------mobile------------------------ */
+@media (max-width: 767px) {
+  .why {
+    padding: 2rem;
+  }
+  .laptop-slider {
+    padding: 2rem;
+  }
+  .image-size {
+    width: 100vw;
+    height: 60vh;
+  }
+}
+
+/* ------------------------------------------------------------- */
