@@ -615,6 +615,29 @@ html {
   .pdrl-12 {
     padding: 0;
   }
+  h1 {
+    font-size: 1.5rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    mix-blend-mode: screen;
+    text-transform: uppercase;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 0px;
+    left: 15%;
+    top: 46%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+  }
 }
 
 /* ------------------------------------------------------------- */
