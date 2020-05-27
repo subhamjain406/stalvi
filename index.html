@@ -313,35 +313,37 @@
                     <p class="section-para7 text-center">Wanna work with us? Hop in...</p>
                 </div>
             </div>
-            <form target="_top" action="" method="post" enctype="text/plain" class="pdrl-12">
+            <form target="_top" action="/send" method="POST" class="pdrl-12">
                 <div class="row contact">
                     <div class="col-lg-6">
-                        <input type="text" name="First Name" value="" placeholder="First Name" class="form-control">
+                        <input type="text" name="first_name" id="first_name" placeholder="First Name"
+                            class="form-control">
                     </div>
                     <div class="col-lg-6">
-                        <input type="text" name="Last Name" value="" placeholder="Last Name" class="form-control">
+                        <input type="text" name="last_name" id="last_name" placeholder="Last Name" class="form-control">
                     </div>
                 </div>
                 <div class="row contact">
                     <div class="col-lg-12">
-                        <input type="text" name="Subject" value="" placeholder="Subject" class="form-control">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" class="form-control">
                     </div>
                 </div>
                 <div class="row contact">
                     <div class="col-lg-12">
-                        <input type="email" name="Email" value="" placeholder="Your Email" class="form-control">
+                        <input type="email" name="email" id="email" placeholder="Your Email" class="form-control"
+                            required>
                     </div>
                 </div>
                 <div class="row contact">
                     <div class="col-lg-12">
-                        <textarea name="Message" rows="5" cols="30" placeholder="Write Your Message Here.."
-                            class="form-control"></textarea>
+                        <textarea name="message" rows="5" cols="30" id="message" placeholder="Write Your Message Here.."
+                            class="form-control" required></textarea>
                     </div>
                 </div>
                 <div class="row contact">
                     <div class="col-lg-6">
-                        <input type="submit" class="btn btn-dark py-2 px-3 btn-block" style="font-size: 1.5rem;"
-                            value="Send Message">
+                        <input type="submit" class="btn btn-dark py-2 px-3 btn-block" style="font-size: 1rem;"
+                            value="Send Message" onclick="sendingEmail(event)">
                     </div>
                 </div>
             </form>

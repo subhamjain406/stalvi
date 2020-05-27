@@ -64,3 +64,6 @@ $(document).ready(function () {
     }
   });
 });
+function sendingEmail(event) {
+  $("#first_name").value = "";
+}
