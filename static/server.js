@@ -21,6 +21,16 @@ app.use(
 );
 
 app.use(cors());
+app.use((req, res, next) => {
+  res.append("Access-Control-Allow-Origin", "http://stalvi.in");
+  res.append("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+  res.append(
+    "Access-Control-Allow-Headers",
+    "Origin, Accept,Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+  );
+  res.append("Access-Control-Allow-Credentials", true);
+  next();
+});
 
 var apiKey = "SG.6h2nPuMkSrWQtvov_";
 apiKey += "N11PQ.";
