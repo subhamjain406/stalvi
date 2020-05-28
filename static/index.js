@@ -71,7 +71,7 @@ function sendingEmail(event) {
     email: $("#email").val(),
     message: $("#message").val(),
   };
-  axios.post("http://localhost:5000/send", data).then((data) => {
+  axios.post("http://stalvi.in/send", data).then((data) => {
     if (data.status == "200") {
       $("#first_name").val("");
       $("#last_name").val("");
