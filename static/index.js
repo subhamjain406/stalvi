@@ -40,7 +40,6 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     var positionTop = $(document).scrollTop();
-    console.log(positionTop);
     if (positionTop > 600) {
       $(".facebook").addClass("animate__fadeInRight");
       setTimeout(() => {
@@ -65,5 +64,22 @@ $(document).ready(function () {
   });
 });
 function sendingEmail(event) {
-  $("#first_name").value = "";
+  const data = {
+    first_name: $("#first_name").val(),
+    last_name: $("#last_name").val(),
+    subject: $("#subject").val(),
+    email: $("#email").val(),
+    message: $("#message").val(),
+  };
+  axios.post("http://localhost:5000/send", data).then((data) => {
+    if (data.status == "200") {
+      $("#first_name").val("");
+      $("#last_name").val("");
+      $("#subject").val("");
+      $("#email").val("");
+      $("#message").val("");
+      alert("Email sent successfully");
+    }
+  });
+  console.log(data);
 }
