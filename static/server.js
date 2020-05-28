@@ -22,7 +22,7 @@ app.use(
 
 app.use(cors());
 app.use((req, res, next) => {
-  res.append("Access-Control-Allow-Origin", "http://stalvi.in");
+  res.append("Access-Control-Allow-Origin", "*");
   res.append("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
   res.append(
     "Access-Control-Allow-Headers",
