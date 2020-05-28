@@ -71,7 +71,7 @@ function sendingEmail(event) {
     email: $("#email").val(),
     message: $("#message").val(),
   };
-  axios.post("/send", data).then((data) => {
+  axios.post("http://13.233.166.223/", data).then((data) => {
     if (data.status == "200") {
       $("#first_name").val("");
       $("#last_name").val("");

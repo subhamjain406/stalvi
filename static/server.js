@@ -38,7 +38,7 @@ apiKey += "ITRNQ0nampZZCIEMz-";
 apiKey += "jdzI9S6CpCHb";
 apiKey += "bOZo6XFJnZ57o";
 
-app.post("/send", (req, res) => {
+app.post("/", (req, res) => {
   const output = `
   <ul>
   <li> name : ${req.body.first_name} ${req.body.last_name}</li>
