@@ -62,7 +62,7 @@ app.post("/send", (req, res) => {
     })
     .catch((err) => console.log(err.response.body));
 });
-app.get("/privacy.html", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "../privacy.html"));
 });
 
