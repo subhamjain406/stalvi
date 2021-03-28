@@ -1,383 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="./static/images/icon.png" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
-        integrity="sha256-fDncdclXlALqR3HOO34OGHxek91q8ApmD3gGldM+Rng=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
-        integrity="sha256-2DoaRRHfHWna6mpfGImxAx/cu0vFGpqEkcf/YXf+yk4=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css"
-        integrity="sha256-dXyOKu96u6fTl8EzuQyIRkxBEIzVLPQT8c16NSCl4Sc=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-    <link rel="stylesheet" href="./static/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./static/images/icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+      integrity="sha256-fDncdclXlALqR3HOO34OGHxek91q8ApmD3gGldM+Rng="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+      integrity="sha256-2DoaRRHfHWna6mpfGImxAx/cu0vFGpqEkcf/YXf+yk4="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css"
+      integrity="sha256-dXyOKu96u6fTl8EzuQyIRkxBEIzVLPQT8c16NSCl4Sc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="./static/styles.css" />
 
     <title>Stalvi</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid">
-        <div class="row" id="start">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-                <div class="container-fluid">
+      <div class="row" id="start">
+        <nav
+          class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar"
+        >
+          <div class="container-fluid">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+              <img
+                src="./static/images/logo3.png"
+                alt=""
+                style="width: 120px"
+              />
+            </a>
 
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="#">
-                        <img src="./static/images/logo3.png" alt="" style="width: 120px;">
-                    </a>
+            <!-- Collapse -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <!-- Collapse -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Left -->
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#start"
+                    >Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Stalvi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#category">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/privacy.html">Privacy Policy</a>
+                </li>
+              </ul>
 
-                    <!-- Links -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                        <!-- Left -->
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#start">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About Stalvi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#category">Category</a>
-                            </li>
-                        </ul>
-
-                        <!-- Right -->
-                        <ul class="navbar-nav nav-flex-icons">
-                            <li class="nav-item">
-                                <a href="#contact" class="nav-link border border-light rounded">
-                                    Contact Us
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                </div>
-            </nav>
-            <!-- Navbar -->
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./static/images/FrontSlider 1.jpg" class="d-block image-size" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h1>Fashion Advertising</h1>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./static/images/Front slider 3.jpg" class="d-block image-size" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h1>Food & Beverage Advertising</h1>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./static/images/FrontSlider 4.jpg" class="d-block image-size" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h1>Travel Advertising</h1>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./static/images/Front slider 5.jpg" class="d-block image-size" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h1>Technology Advertising</h1>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./static/images/Front slider 6.jpg" class="d-block image-size" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h1>Lifestyle Advertising</h1>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./static/images/Front slider 7.jpg" class="d-block image-size" alt="...">
-                        <div class="carousel-caption d-md-block">
-                            <h1>Beauty Advertising</h1>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+              <!-- Right -->
+              <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                  <a
+                    href="#contact"
+                    class="nav-link border border-light rounded"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+        <!-- Navbar -->
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./static/images/FrontSlider 1.jpg"
+                class="d-block image-size"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h1>Fashion Advertising</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./static/images/Front slider 3.jpg"
+                class="d-block image-size"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h1>Food & Beverage Advertising</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./static/images/FrontSlider 4.jpg"
+                class="d-block image-size"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h1>Travel Advertising</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./static/images/Front slider 5.jpg"
+                class="d-block image-size"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h1>Technology Advertising</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./static/images/Front slider 6.jpg"
+                class="d-block image-size"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h1>Lifestyle Advertising</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./static/images/Front slider 7.jpg"
+                class="d-block image-size"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h1>Beauty Advertising</h1>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
+      </div>
     </div>
     <div class="row why" id="about">
-        <div class="col-md-4 left-section">
-            <h3 class="left-heading mb-4">WHAT IS STALVI?</h3>
-            <p class="left-context">We are driven by strategies best suited to your expectations and data analysis to
-                tell your story to your target customers and
-                retain a lasting impression. We achieve successful results with Influencers and authentic collaboration
-                with the passion for
-                your product, reaching every potential customer. Our service can ensure outstanding results for each
-                Influencer Campaign
-                we do with our partners. We will help you to tell your story to your ballpark shopper.</p>
-        </div>
-        <div class="col-md-8 right-section">
-            <p class="right-context">Every brand deserves to reach their target customer, and achieve their dream to
-                reach million hearts and retain their longing
-                product effect. With millions of Marketing ideas and shopping sites out there, it can get confusing to
-                choose what suits your
-                taste, personality and budget. STALVI influences brings Businesses and influencers together to offer
-                increase in sales of their
-                products via proper customer pipeline, influencing the customer sentiments towards your products. </p>
-        </div>
+      <div class="col-md-4 left-section">
+        <h3 class="left-heading mb-4">WHAT IS STALVI?</h3>
+        <p class="left-context">
+          We are driven by strategies best suited to your expectations and data
+          analysis to tell your story to your target customers and retain a
+          lasting impression. We achieve successful results with Influencers and
+          authentic collaboration with the passion for your product, reaching
+          every potential customer. Our service can ensure outstanding results
+          for each Influencer Campaign we do with our partners. We will help you
+          to tell your story to your ballpark shopper.
+        </p>
+      </div>
+      <div class="col-md-8 right-section">
+        <p class="right-context">
+          Every brand deserves to reach their target customer, and achieve their
+          dream to reach million hearts and retain their longing product effect.
+          With millions of Marketing ideas and shopping sites out there, it can
+          get confusing to choose what suits your taste, personality and budget.
+          STALVI influences brings Businesses and influencers together to offer
+          increase in sales of their products via proper customer pipeline,
+          influencing the customer sentiments towards your products.
+        </p>
+      </div>
     </div>
     <div class="row laptop-slider">
-        <div class="col-xs-12 col-sm-5 col-md-5">
-            <div class="mockups">
-                <!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
-                <div class="css-mb with-glare">
-                    <div class="mb-display-position">
-                        <div class="mb-display">
-                            <div class="mb-screen-position">
-                                <div class="mb-screen">
-                                    <section id="mockup-slider" class="owl-carousel">
-                                        <!-- <div><img src="./static/images/blog3.png" alt="" /></div> -->
-                                        <div><img src="./static/images/rsz_facebook_laptop.jpg" alt="" /></div>
-                                        <div><img src="./static/images/linkedin.webp" alt="" /></div>
-                                        <div><img src="./static/images/instagram.txt" alt="" /></div>
-                                        <div><img src="./static/images/snapchat1.jpg" alt="" /></div>
-                                        <div><img src="./static/images/twitter.jpg" alt="" /></div>
-                                        <div><img src="./static/images/pininterest.png" alt="" /></div>
-                                        <div><img src="./static/images/YouTube.jpg" alt="" /></div>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-body"></div>
-                    <div class="mb-bottom-cover"></div>
+      <div class="col-xs-12 col-sm-5 col-md-5">
+        <div class="mockups">
+          <!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+          <div class="css-mb with-glare">
+            <div class="mb-display-position">
+              <div class="mb-display">
+                <div class="mb-screen-position">
+                  <div class="mb-screen">
+                    <section id="mockup-slider" class="owl-carousel">
+                      <!-- <div><img src="./static/images/blog3.png" alt="" /></div> -->
+                      <div>
+                        <img
+                          src="./static/images/rsz_facebook_laptop.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img src="./static/images/linkedin.webp" alt="" />
+                      </div>
+                      <div>
+                        <img src="./static/images/instagram.txt" alt="" />
+                      </div>
+                      <div>
+                        <img src="./static/images/snapchat1.jpg" alt="" />
+                      </div>
+                      <div>
+                        <img src="./static/images/twitter.jpg" alt="" />
+                      </div>
+                      <div>
+                        <img src="./static/images/pininterest.png" alt="" />
+                      </div>
+                      <div>
+                        <img src="./static/images/YouTube.jpg" alt="" />
+                      </div>
+                    </section>
+                  </div>
                 </div>
-
-                <div class="controls">
-                    <a href="javascript:void(0);" class="prev">Prev</a>
-                    <a href="javascript:void(0);" class="next">Next</a>
-                </div>
-
+              </div>
             </div>
+            <div class="mb-body"></div>
+            <div class="mb-bottom-cover"></div>
+          </div>
+
+          <div class="controls">
+            <a href="javascript:void(0);" class="prev">Prev</a>
+            <a href="javascript:void(0);" class="next">Next</a>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-7 col md-7 py-5">
-            <h3 class="advertisement-heading mb-4">CHANNELS TO SUPPORT YOUR ADVERTISEMENT:</h3>
-            <div class="channel-list mt-5 text-center">
-                <img src="./static/images/facebook (1).svg" width="60px" alt="">
-                <img src="./static/images/linkedin (3).svg" width="60px" alt="">
-                <img src="./static/images/instagram.svg" width="60px" alt="">
-                <img src="./static/images/social-media.svg" width="60px" alt="">
-                <img src="./static/images/twitter (1).svg" width="60px" alt="">
-                <img src="./static/images/pinterest.svg" width="60px" alt="">
-                <img src="./static/images/youtube (1).svg" width="60px" alt="">
-            </div>
+      </div>
+      <div class="col-xs-12 col-sm-7 col md-7 py-5">
+        <h3 class="advertisement-heading mb-4">
+          CHANNELS TO SUPPORT YOUR ADVERTISEMENT:
+        </h3>
+        <div class="channel-list mt-5 text-center">
+          <img src="./static/images/facebook (1).svg" width="60px" alt="" />
+          <img src="./static/images/linkedin (3).svg" width="60px" alt="" />
+          <img src="./static/images/instagram.svg" width="60px" alt="" />
+          <img src="./static/images/social-media.svg" width="60px" alt="" />
+          <img src="./static/images/twitter (1).svg" width="60px" alt="" />
+          <img src="./static/images/pinterest.svg" width="60px" alt="" />
+          <img src="./static/images/youtube (1).svg" width="60px" alt="" />
         </div>
+      </div>
     </div>
     <div class="row">
-        <div class="col-md-12 slogan">
-            <div class="b-simple-text">
-                <div class="b-simple-text__wrapper">
-                    <h2 class="b-simple-text__header">Save Time and Money at this pacing world. We have got you covered,
-                        because we are here.</h2>
-                </div>
-            </div>
+      <div class="col-md-12 slogan">
+        <div class="b-simple-text">
+          <div class="b-simple-text__wrapper">
+            <h2 class="b-simple-text__header">
+              Save Time and Money at this pacing world. We have got you covered,
+              because we are here.
+            </h2>
+          </div>
         </div>
+      </div>
     </div>
     <div class="row category" id="category">
-        <div class="col-md-12 text-center mt-5 mb-0">
-            <p class="business mb-0">CHOOSE YOUR BUSINESS</p>
+      <div class="col-md-12 text-center mt-5 mb-0">
+        <p class="business mb-0">CHOOSE YOUR BUSINESS</p>
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-4 pd-114">
+        <div class="crd crd--effect-1">
+          <div
+            class="crd-img"
+            style="
+              background-image: url(./static/images/lifestyle-min.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
+
+          <div class="crd-info">
+            <h2 class="crd-heading">Lifestyle</h2>
+          </div>
         </div>
-        <div class="col-xs-6 col-sm-3 col-md-4 pd-114">
-            <div class="crd crd--effect-1">
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-4 pd-67">
+        <div class="crd crd--effect-1">
+          <div
+            class="crd-img"
+            style="
+              background-image: url(./static/images/food-min.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
 
-                <div class="crd-img"
-                    style='background-image: url(./static/images/lifestyle-min.jpg); background-repeat: no-repeat; background-size: cover;'>
-                </div>
-
-                <div class="crd-info">
-                    <h2 class="crd-heading">Lifestyle</h2>
-                </div>
-
-            </div>
+          <div class="crd-info">
+            <h2 class="crd-heading">Food</h2>
+            <h2 class="crd-heading">and</h2>
+            <h2 class="crd-heading">Beverage</h2>
+          </div>
         </div>
-        <div class="col-xs-6 col-sm-3 col-md-4 pd-67">
-            <div class="crd crd--effect-1">
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-4">
+        <div class="crd crd--effect-1">
+          <div
+            class="crd-img"
+            style="
+              background-image: url(./static/images/fashion-min.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
 
-                <div class="crd-img"
-                    style='background-image: url(./static/images/food-min.jpg); background-repeat: no-repeat; background-size: cover;'>
-                </div>
-
-                <div class="crd-info">
-                    <h2 class="crd-heading">Food</h2>
-                    <h2 class="crd-heading">and</h2>
-                    <h2 class="crd-heading">Beverage</h2>
-                </div>
-
-            </div>
+          <div class="crd-info">
+            <h2 class="crd-heading">Fashion</h2>
+          </div>
         </div>
-        <div class="col-xs-6 col-sm-3 col-md-4">
-            <div class="crd crd--effect-1">
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-4 pd-114">
+        <div class="crd crd--effect-1">
+          <div
+            class="crd-img"
+            style="
+              background-image: url(./static/images/beauty.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
 
-                <div class="crd-img"
-                    style='background-image: url(./static/images/fashion-min.jpg); background-repeat: no-repeat; background-size: cover;'>
-                </div>
-
-                <div class="crd-info">
-                    <h2 class="crd-heading">Fashion</h2>
-                </div>
-
-            </div>
+          <div class="crd-info">
+            <h2 class="crd-heading">Beauty</h2>
+          </div>
         </div>
-        <div class="col-xs-6 col-sm-3 col-md-4 pd-114">
-            <div class="crd crd--effect-1">
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-4 pd-67">
+        <div class="crd crd--effect-1">
+          <div
+            class="crd-img"
+            style="
+              background-image: url(./static/images/Travelcategory.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
 
-                <div class="crd-img"
-                    style='background-image: url(./static/images/beauty.jpg); background-repeat: no-repeat; background-size: cover;'>
-                </div>
-
-                <div class="crd-info">
-                    <h2 class="crd-heading">Beauty</h2>
-                </div>
-
-            </div>
+          <div class="crd-info">
+            <h2 class="crd-heading">Travel</h2>
+          </div>
         </div>
-        <div class="col-xs-6 col-sm-3 col-md-4 pd-67">
-            <div class="crd crd--effect-1">
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-4">
+        <div class="crd crd--effect-1">
+          <div
+            class="crd-img"
+            style="
+              background-image: url(./static/images/technology.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
 
-                <div class="crd-img"
-                    style='background-image: url(./static/images/Travelcategory.jpg); background-repeat: no-repeat; background-size: cover;'>
-                </div>
-
-                <div class="crd-info">
-                    <h2 class="crd-heading">Travel</h2>
-                </div>
-
-            </div>
+          <div class="crd-info">
+            <h2 class="crd-heading">Technology</h2>
+          </div>
         </div>
-        <div class="col-xs-6 col-sm-3 col-md-4">
-            <div class="crd crd--effect-1">
-
-                <div class="crd-img"
-                    style='background-image: url(./static/images/technology.jpg); background-repeat: no-repeat; background-size: cover;'>
-                </div>
-
-                <div class="crd-info">
-                    <h2 class="crd-heading">Technology</h2>
-                </div>
-
-            </div>
-        </div>
+      </div>
     </div>
     <div class="row mb-5 mt-3">
-        <div class="col-xs-6 col-sm-6 col-md-6 m-auto">
-            <div class="example-info">WE HAVE GOT</div>
-            <div class="example-info1">YOUR BUSINESS</div>
-            <div class="example-info2">COVERED</div>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-6">
-            <img src="./static/images/Business covered.jpg" style="height: 60vh;" class="example-image" alt="">
-        </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 m-auto">
+        <div class="example-info">WE HAVE GOT</div>
+        <div class="example-info1">YOUR BUSINESS</div>
+        <div class="example-info2">COVERED</div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6">
+        <img
+          src="./static/images/Business covered.jpg"
+          style="height: 60vh"
+          class="example-image"
+          alt=""
+        />
+      </div>
     </div>
-    <div class="row" id="contact"
-        style="background-image: url(./static/images/contact_back1.jpg); background-repeat: no-repeat; background-size: cover;">
-        <div class="col-xs-12 col-md-4 m-auto">
-            <img src="./static/images/PicsArt_05-21-12.03.19.png" width="86%" alt="" class="ml-8">
+    <div
+      class="row"
+      id="contact"
+      style="
+        background-image: url(./static/images/contact_back1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <div class="col-xs-12 col-md-4 m-auto">
+        <img
+          src="./static/images/PicsArt_05-21-12.03.19.png"
+          width="86%"
+          alt=""
+          class="ml-8"
+        />
+      </div>
+      <div class="col-xs-12 col-md-8 p-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-title7">Contact Us</h2>
+            <p class="section-para7 text-center">
+              Wanna work with us? Hop in...
+            </p>
+          </div>
         </div>
-        <div class="col-xs-12 col-md-8 p-5">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-title7">Contact Us</h2>
-                    <p class="section-para7 text-center">Wanna work with us? Hop in...</p>
-                </div>
+        <form
+          target="_top"
+          action="send"
+          method="post"
+          enctype="text/plain"
+          class="pdrl-12"
+        >
+          <div class="row contact">
+            <div class="col-lg-6">
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                placeholder="First Name"
+                class="form-control"
+              />
             </div>
-            <form target="_top" action="send" method="post" enctype="text/plain" class="pdrl-12">
-                <div class="row contact">
-                    <div class="col-lg-6">
-                        <input type="text" name="first_name" id="first_name" placeholder="First Name"
-                            class="form-control">
-                    </div>
-                    <div class="col-lg-6">
-                        <input type="text" name="last_name" id="last_name" placeholder="Last Name" class="form-control">
-                    </div>
-                </div>
-                <div class="row contact">
-                    <div class="col-lg-12">
-                        <input type="text" name="subject" id="subject" placeholder="Subject" class="form-control">
-                    </div>
-                </div>
-                <div class="row contact">
-                    <div class="col-lg-12">
-                        <input type="email" name="email" id="email" placeholder="Your Email" class="form-control"
-                            required>
-                    </div>
-                </div>
-                <div class="row contact">
-                    <div class="col-lg-12">
-                        <textarea name="message" rows="5" cols="30" id="message" placeholder="Write Your Message Here.."
-                            class="form-control" required></textarea>
-                    </div>
-                </div>
-                <div class="row contact">
-                    <div class="col-lg-6">
-                        <input type="submit" class="btn btn-dark py-2 px-3 btn-block" style="font-size: 1rem;"
-                            value="Send Message" onclick="sendingEmail(event)">
-                    </div>
-                </div>
-            </form>
-        </div>
+            <div class="col-lg-6">
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                placeholder="Last Name"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="row contact">
+            <div class="col-lg-12">
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="row contact">
+            <div class="col-lg-12">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+          <div class="row contact">
+            <div class="col-lg-12">
+              <textarea
+                name="message"
+                rows="5"
+                cols="30"
+                id="message"
+                placeholder="Write Your Message Here.."
+                class="form-control"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="row contact">
+            <div class="col-lg-6">
+              <input
+                type="submit"
+                class="btn btn-dark py-2 px-3 btn-block"
+                style="font-size: 1rem"
+                value="Send Message"
+                onclick="sendingEmail(event)"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <!-- Footer -->
     <div class="row bg-dark p-5">
-        <div class="col-md-12 d-flex justify-content-around">
-            <div>
-                <a href=""><i class="fa fa-facebook-official mr-md-5 mr-3 fa-3x text-white" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter-square  mr-md-5 mr-3 fa-3x text-white" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin-square  mr-md-5 mr-3 fa-3x text-white" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-instagram fa-3x text-white" aria-hidden="true"></i></a>
-            </div>
+      <div class="col-md-12 d-flex justify-content-around">
+        <div>
+          <a href=""
+            ><i
+              class="fa fa-facebook-official mr-md-5 mr-3 fa-3x text-white"
+              aria-hidden="true"
+            ></i
+          ></a>
+          <a href=""
+            ><i
+              class="fa fa-twitter-square mr-md-5 mr-3 fa-3x text-white"
+              aria-hidden="true"
+            ></i
+          ></a>
+          <a href=""
+            ><i
+              class="fa fa-linkedin-square mr-md-5 mr-3 fa-3x text-white"
+              aria-hidden="true"
+            ></i
+          ></a>
+          <a href=""
+            ><i class="fa fa-instagram fa-3x text-white" aria-hidden="true"></i
+          ></a>
         </div>
-        <div class="col-md-12 pt-5">
-            <div class="footer-copyright text-center text-white">© 2020 Copyright: STALVI
-            </div>
+      </div>
+      <div class="col-md-12 pt-5">
+        <div class="footer-copyright text-center text-white">
+          © 2020 Copyright: STALVI
         </div>
+      </div>
     </div>
     <!-- Footer -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
-        integrity="sha256-4OK8Th0+5QJMThqlimytmqQvxjqMic4YATocjyuUh1w=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+      integrity="sha256-4OK8Th0+5QJMThqlimytmqQvxjqMic4YATocjyuUh1w="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://use.fontawesome.com/c569616549.js"></script>
     <script src="./static/index.js"></script>
-</body>
-
+  </body>
 </html>
