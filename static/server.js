@@ -62,6 +62,9 @@ app.post("/send", (req, res) => {
     })
     .catch((err) => console.log(err.response.body));
 });
+app.get("/privacy.html", (req, res) => {
+  res.sendFile(path.join(__dirname + "../privacy.html"));
+});
 
 // Serve static files from the React frontend app
 app.use(express.static(path.join(__dirname, "../")));
